@@ -1,4 +1,4 @@
-Getting started with BDD in Python  [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg "MIT")](https://github.com/guoliang-dev/bdd-python/blob/master/LICENSE)
+Getting started with BDD in Python  [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg "MIT")](https://github.com/guoliang-dev/bdd-python/blob/master/LICENSE) [![Build Status](https://travis-ci.org/guoliang-dev/bdd-python.svg?branch=master)](https://travis-ci.org/guoliang-dev/bdd-python)
 =============
 
 **This is an example project demonstrating BDD in Python using Lettuce, you may pull this project and have a try!**
