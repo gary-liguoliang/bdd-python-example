@@ -1,21 +1,22 @@
 Getting started with BDD in Python  [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg "MIT")](https://github.com/guoliang-dev/bdd-python/blob/master/LICENSE)
 =============
 
+**This is an example project demonstrating BDD in Python using Lettuce, you may pull this project and have a try!**
+**这是一个使用Python与Lettuce来展示行为驱动开发的项目, 你可以把它更新到本地以快速开始学习.**
 
-**BDD can save Agile**
+
+**BDD can save Agile 行为驱动开发可以拯救敏捷**
 > - You can’t stay agile without clean code
 - You can’t have clean code without refactoring
 - You can’t refactor without good automated tests
 
 > _[Matt Wynne, founder fo Cucumber Ltd](https://www.infoq.com/news/2015/03/bdd-save-agile)_
 
-<hr />
 
-**This is an example project demonstrating BDD in Python using Lettuce.**
+
 we're going to build a vending machine based on the features provided by customer/BA. we'll use [`Gherkin`](https://github.com/cucumber/cucumber/wiki/Gherkin) as the [`DSL`](http://martinfowler.com/bliki/BusinessReadableDSL.html). 
 > With a business-readable DSL, programmers write the code but they show that code frequently to business people who can understand what it means. These customers can then make changes, maybe draft some code, but it's the programmers who make it solid and do the debugging and testing.
 
-**If you want to get started with BDD in Python, you may pull this project and have a try!**
 
 
 ### Project info
