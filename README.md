@@ -1,4 +1,4 @@
-BDD, Python and Lettuce  [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg "MIT")](https://github.com/guoliang-dev/bdd-python/blob/master/LICENSE)
+Getting started with BDD in Python  [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg "MIT")](https://github.com/guoliang-dev/bdd-python/blob/master/LICENSE)
 =============
 
 
@@ -9,22 +9,24 @@ BDD, Python and Lettuce  [![License MIT](https://img.shields.io/badge/License-MI
 
 > _[Matt Wynne, founder fo Cucumber Ltd](https://www.infoq.com/news/2015/03/bdd-save-agile)_
 
-This is an example project demonstrating BDD in Python using Lettuce. 
+<hr />
 
+**This is an example project demonstrating BDD in Python using Lettuce.**
 we're going to build a vending machine based on the features provided by customer/BA. we'll use [`Gherkin`](https://github.com/cucumber/cucumber/wiki/Gherkin) as the [`DSL`](http://martinfowler.com/bliki/BusinessReadableDSL.html). 
 > With a business-readable DSL, programmers write the code but they show that code frequently to business people who can understand what it means. These customers can then make changes, maybe draft some code, but it's the programmers who make it solid and do the debugging and testing.
 
+**If you want to get started with BDD in Python, you may pull this project and have a try!**
 
 
-## Project info
+### Project info
 
-### Tools
+#### Tools
 
 - Python 2.7.11
 - Lettuce 0.2.21
 
 
-### BDD Feature files
+#### BDD Feature files
 
 [vm/test/features](https://github.com/guoliang-dev/bdd-python/tree/master/vm/test/features)
 
@@ -32,7 +34,9 @@ we're going to build a vending machine based on the features provided by custome
 **How to run all BDD tests**
 
 1. step by step:
-  1. navigate to the project-root and install the project locally in '[Development Mode](https://pythonhosted.org/setuptools/setuptools.html#development-mode)'
+  1. navigate to the project-root and install dependencies by: `pip install -r requirements.txt`
+  2. 
+  2. install the project locally in '[Development Mode](https://pythonhosted.org/setuptools/setuptools.html#development-mode)'
  ```pip install -e .``` (it creates a special .egg-link file in the deployment directory, that links to your project’s source code)
 
   2. start testing by:  ```lettuce vm/test```
