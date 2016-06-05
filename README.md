@@ -27,6 +27,16 @@ we're going to build a vending machine based on the features provided by custome
 
 vm/test/features
 
+### CI
+
+config your Jenkins job with:
+```bash
+chmod u+x bin/install_and_run_at.sh
+bin/install_and_run_at.sh
+```
+
+`Publish JUnit test result report` can be added to show the acceptance test result using `lettucetests.xml`. 
+
 ### Q&A
 **How to run all BDD tests**
 
