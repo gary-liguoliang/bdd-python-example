@@ -31,7 +31,7 @@ we're going to build a vending machine based on the features provided by custome
 [vm/test/features](https://github.com/guoliang-dev/bdd-python/tree/master/vm/test/features)
 
 ### Q&A
-**How to run all BDD tests**
+**How to run all BDD tests?**
 
 1. step by step:
   1. navigate to the project-root and install dependencies by: `pip install -r requirements.txt`
@@ -41,7 +41,7 @@ we're going to build a vending machine based on the features provided by custome
 
 2. or you may execute the bash script: `bin/install_and_run_at.sh`. it will create a new `virtualenv` and install the app and then start the `lettuce` test. 
 
-**How to config CI job**
+**How to config CI job?**
 
 config your Jenkins job with:
 ```bash
