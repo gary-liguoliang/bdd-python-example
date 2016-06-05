@@ -1,25 +1,38 @@
+from decimal import Decimal
+
 from lettuce import step, world
 from vm.vending_machine import VendingMachine
 
 
-@step(u'Given "([^"]*)" is available in the vending machine and the price is 1.20')
-def given_group1_is_available_in_the_vending_machine_and_the_price_is_1_20(step, group1):
-    world.items = []
-    world.items.append(group1)
+
+@step(u'Given a working vending machine')
+def given_a_working_vending_machine(step):
+    world.vm = VendingMachine()
+    # assert False, 'This step must be implemented'
 
 
-@step(u'Given I selected "([^"]*)"')
-def given_i_selected_100(step, item):
-    world.selected = item
+@step(u'and "([^"]*)" is available with price (.+)')
+def setup_inventory(step, item_name, price):
+    world.vm.add_to_inventory(item_name, Decimal(price))
 
 
-@step(u'When I pay (.+)')
-def when_i_pay_1_20(step,  amount):
-    print amount
+@step(u'When I selected "([^"]*)"')
+def when_i_selected_group1(step, select_item):
+    world.selected_item = select_item
+
+
+@step(u'and I pay (.+)')
+def and_i_pay_1_20(step, amout):
+    world.paid_amount = Decimal(amout)
 
 
 @step(u'Then I get a "([^"]*)"')
-def then_i_get_1_group1(step, group1):
-    print '\n items: %s, selected: %s' % (world.items,  world.selected)
-    print VendingMachine()
-    # assert False, 'This step must be implemented'
+def then_i_get_a_group1(step, group1):
+    item_received = world.vm.sell_item(world.selected_item, world.paid_amount)
+    assert item_received.name == world.selected_item
+
+
+@step("I get nothing")
+def get_nothing(step):
+    item_received = world.vm.sell_item(world.selected_item, world.paid_amount)
+    assert not item_received

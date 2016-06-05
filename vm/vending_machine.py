@@ -13,5 +13,5 @@ class VendingMachine(object):
 
     def sell_item(self, item_name, amount):
         item = self.inventory.get(item_name)
-        if item and amount >= item[0].price:
+        if item and amount >= item.price:
             return item
