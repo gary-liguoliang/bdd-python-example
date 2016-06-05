@@ -15,3 +15,7 @@ class VendingMachine(object):
         item = self.inventory.get(item_name)
         if item and amount >= item.price:
             return item
+
+    def get_item_price(self, item):
+        return self.inventory.get(item).price
+
