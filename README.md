@@ -35,10 +35,8 @@ we're going to build a vending machine based on the features provided by custome
 
 1. step by step:
   1. navigate to the project-root and install dependencies by: `pip install -r requirements.txt`
-  2. 
   2. install the project locally in '[Development Mode](https://pythonhosted.org/setuptools/setuptools.html#development-mode)'
  ```pip install -e .``` (it creates a special .egg-link file in the deployment directory, that links to your project’s source code)
-
   2. start testing by:  ```lettuce vm/test```
 
 2. or you may execute the bash script: `bin/install_and_run_at.sh`. it will create a new `virtualenv` and install the app and then start the `lettuce` test. 
