@@ -1,6 +1,8 @@
 BDD, Python and Lettuce
 =============
 
+[![License MIT](https://img.shields.io/badge/License-MIT-blue.svg "MIT")](https://github.com/guoliang-dev/bdd-python/blob/master/LICENSE)
+
 **BDD can save Agile**
 > - You can’t stay agile without clean code
 - You can’t have clean code without refactoring
