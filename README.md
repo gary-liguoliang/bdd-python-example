@@ -1,8 +1,6 @@
-Getting started with BDD in Python
+# Getting started with BDD in Python
 
-=============
-
-**This is an example project demonstrating BDD in Python using Lettuce, you may pull this project and have a try!**
+This is an example project demonstrating BDD in Python using Lettuce, you may pull this project and have a try!
 
 
 
